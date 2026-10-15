@@ -62,7 +62,7 @@ async function enableMIDI() {
     return;
   }
 
-  if (midiOutput) return;
+  if (midiOutput) return midiOutput;
 
   try {
     const midiAccess = await navigator.requestMIDIAccess();
